@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_content"
+    tools:context=".Fragment.VideoFragment"
+    android:orientation="vertical">
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoView"
+                android:layout_margin="8dp"
+                android:text="Tên MV:BigBuckBunny"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeMaxTextSize="16sp"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Nhạc Sĩ: EngineersDream"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/content"
+                android:text="Video Tiếp theo"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#5121FF"
+                android:layout_margin="8dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/videorecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

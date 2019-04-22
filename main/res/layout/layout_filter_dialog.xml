@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <RadioGroup
+        android:id="@+id/rdgSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:checkedButton="@id/rdASC">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sắp xếp theo tên"/>
+        <RadioButton
+            android:id="@+id/rdASC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tăng dần"/>
+        <RadioButton
+            android:id="@+id/rdDEC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giảm dần"/>
+
+    </RadioGroup>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider" />
+
+        <RadioButton
+            android:id="@+id/rdLiked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đã thích"
+            />
+        <RadioButton
+            android:id="@+id/rdDisLike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chưa thích" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/version"
+    tools:context=".LoadingActivity">
+    <ImageView
+        android:id="@+id/clover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="272dp"
+        android:elevation="6dp"
+        android:src="@drawable/clover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/textsplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chào mừng bạn đã đến với Music"
+            android:textColor="#FFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhạc của tôi"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconlogo"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/nameGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
+            android:text="Skinny_TDC"/>
+        <TextView
+            android:id="@+id/nameAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="Nguyễn Văn Quý"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bgapp"
+        android:layout_width="526dp"
+        android:layout_height="900dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bgapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

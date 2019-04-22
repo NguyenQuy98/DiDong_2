@@ -1,0 +1,54 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyThemeRed" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+        <item name="android:background">@color/red</item>
+    </style>
+    <style name="MyThemeYellow" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/yellow</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="android:background">@color/yellow</item>
+    </style>
+    <style name="MyThemeChartreuse" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/chartreuse</item>
+        <item name="colorPrimaryDark">@color/chartreuse</item>
+        <item name="colorAccent">@color/chartreuse</item>
+        <item name="android:background">@color/chartreuse</item>
+
+    </style>
+    <style name="MyThemeCyan" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cyan</item>
+        <item name="colorPrimaryDark">@color/cyan</item>
+        <item name="colorAccent">@color/cyan</item>
+        <item name="android:background">@color/cyan</item>
+    </style>
+<style name="btnRed">
+    <item name="android:background">@drawable/border</item>
+    <item name="android:backgroundTint">@color/red</item>
+</style>
+    <style name="btnYellow">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:backgroundTint">@color/yellow</item>
+    </style>
+    <style name="btnChartreuse">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:backgroundTint">@color/chartreuse</item>
+    </style>
+    <style name="btnCyan">
+        <item name="android:background">@drawable/border</item>
+        <item name="android:backgroundTint">@color/cyan</item>
+    </style>
+</resources>

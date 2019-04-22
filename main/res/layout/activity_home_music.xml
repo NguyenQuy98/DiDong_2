@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="Music"
+    tools:context=".HomeMusic"
+    android:background="@drawable/version">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rMediaControl"/>
+
+    <RelativeLayout
+        android:id="@+id/rMediaControl"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:id="@+id/btnLike"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="32dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btnPrev"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:background="@drawable/ic_favorite_border_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ico_pause"
+            android:background="@drawable/bg_circle" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/btnPlay"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ico_skip_next" />
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/btnPlay"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ico_skip_previous" />
+        <FrameLayout
+            android:id="@+id/btnRepeat"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@id/btnNext"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="#444b5e"
+                android:backgroundTint="#444b5e"
+                android:background="@drawable/ic_repeat_black_24dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

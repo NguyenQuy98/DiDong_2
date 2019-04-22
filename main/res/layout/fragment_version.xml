@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.VersionFragment"
+    android:background="@color/graylight"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="405dp">
+                <LinearLayout
+                    android:background="@drawable/version"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="45dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/logo"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Skinny_TDC"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textSize="21sp"/>
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="275dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nguyễn.Quý"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phát Hành"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/startblue"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lượt Tải"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1.097"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/startblue"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Like"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="986"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/startblue"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="45dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin Phần mền ứng dụng"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Phiên bản"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="1.0.0"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cập nhật vào"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="1 th 4,2019"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tải xuống"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="trên 1.096 bản tải xuống"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kích thướng tải xuống"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="24,41 MB"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mua trong ứng dụng"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Free"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Được cung cấp bởi"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Skinny_TDC"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Phát hành vào"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="8 th 3,2019"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

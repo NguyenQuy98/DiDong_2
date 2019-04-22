@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:label="Home"
+    tools:context=".Fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.smarteist.autoimageslider.SliderLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/imageSlider"/>
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BẠN CÓ MUỐN NGHE NHẠC >"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/version">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="Nghe ngay những ca khúc yêu thích \n dành riêng cho bạn"/>
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iconlogo"
+                    />
+            </LinearLayout>
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MV DÀNH CHO BẠN >"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/videorecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

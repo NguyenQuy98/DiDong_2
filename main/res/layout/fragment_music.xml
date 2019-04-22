@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".Fragment.MusicFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/background_music" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/iconlogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:text="Nhạc hôm nay"
+                android:textColor="#FFFF66"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
